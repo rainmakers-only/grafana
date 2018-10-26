@@ -5,7 +5,7 @@ export interface PluginExports {
   QueryCtrl?: any;
   ConfigCtrl?: any;
   AnnotationsQueryCtrl?: any;
-  TemplateQueryCtrl?: any;
+  TemplateQueryComponent?: any;
   PanelOptions?: any;
 }
 

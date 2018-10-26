@@ -114,7 +114,7 @@ export default class StackdriverDatasource {
         if (!queryRes.series) {
           return;
         }
-        this.projectName = queryRes.meta.defaultProject;
+        // this.projectName = queryRes.meta.defaultProject;
         const unit = this.resolvePanelUnitFromTargets(options.targets);
         queryRes.series.forEach(series => {
           let timeSerie: any = {
