@@ -79,4 +79,4 @@ EXPOSE 3000
 COPY ./packaging/docker/run.sh /run.sh
 
 USER grafana
-CMD [ "run.sh" ]
+CMD [ "./run.sh" ]
