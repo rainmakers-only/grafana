@@ -38,6 +38,6 @@ datasources:
      esVersion: "60"
      maxConcurrentShardRequests: 256
      timeField: created_at
-  version: 1
+  version: 2
   # <bool> allow users to edit datasources from the UI.
   editable: false
