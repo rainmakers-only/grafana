@@ -1,0 +1,48 @@
+# # config file version
+apiVersion: 1
+
+# # list of datasources that should be deleted from the database
+#deleteDatasources:
+#   - name: Graphite
+#     orgId: 1
+
+datasources:
+  # <string, required> name of the datasource. Required
+- name: elastic_test
+  # <string, required> datasource type. Required
+  type: elasticsearch
+  # <string, required> access mode. proxy or direct (Server or Browser in the UI). Required
+  access: proxy
+  # <int> org id. will default to orgId 1 if not specified
+  orgId: 1
+  # <string> url
+  url: https://cfe2088dc5590c04763c95f18c435f96.us-east-1.aws.found.io
+  # <string> database password, if used
+  password:
+  # <string> database user, if used
+  user:
+  # <string> database name, if used
+  database: "employers"
+  # <bool> enable/disable basic auth
+  basicAuth: true
+  # <string> basic auth username
+  basicAuthUser: elastic
+  # <string> basic auth password
+  basicAuthPassword: NnALaCm8wbUa5nSdCVZFL1pj
+  # <bool> enable/disable with credentials headers
+  withCredentials:
+  # <bool> mark as default datasource. Max one per org
+  isDefault:
+  # <map> fields that will be converted to json and stored in jsonData
+  jsonData:
+     graphiteVersion: "1.1"
+     tlsAuth: true
+     tlsAuthWithCACert: true
+  # <string> json object of data that will be encrypted.
+  secureJsonData:
+    tlsCACert: "..."
+    tlsClientCert: "..."
+    tlsClientKey: "..."
+  version: 1
+  # <bool> allow users to edit datasources from the UI.
+  editable: false
