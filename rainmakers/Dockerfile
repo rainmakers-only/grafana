@@ -8,6 +8,4 @@ RUN apt-get update && apt-get install -qq -y bash && \
 
 USER grafana
 
-ENTRYPOINT ["/bin/bash"]
-
 CMD ["/run.sh"]
