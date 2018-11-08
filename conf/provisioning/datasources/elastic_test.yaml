@@ -8,7 +8,7 @@ apiVersion: 1
 
 datasources:
   # <string, required> name of the datasource. Required
-- name: elastic_test
+- name: elastic
   # <string, required> datasource type. Required
   type: elasticsearch
   # <string, required> access mode. proxy or direct (Server or Browser in the UI). Required
@@ -30,7 +30,7 @@ datasources:
   # <string> basic auth password
   basicAuthPassword: NnALaCm8wbUa5nSdCVZFL1pj
   # <bool> enable/disable with credentials headers
-  withCredentials:
+  withCredentials: false
   # <bool> mark as default datasource. Max one per org
   isDefault:
   # <map> fields that will be converted to json and stored in jsonData
