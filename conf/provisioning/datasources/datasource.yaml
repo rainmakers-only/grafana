@@ -8,7 +8,7 @@ apiVersion: 1
 
 datasources:
   # <string, required> name of the datasource. Required
-- name: #{PORT}
+- name: elastic2
   # <string, required> datasource type. Required
   type: elasticsearch
   # <string, required> access mode. proxy or direct (Server or Browser in the UI). Required
