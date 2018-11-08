@@ -50,7 +50,7 @@ ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
 
 WORKDIR $GF_PATHS_HOME
 
-RUN apt-get update && apt-get install -qq -y bash libfontconfig ca-certificates && \
+RUN apt-get update && apt-get install -qq -y libfontconfig ca-certificates && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
@@ -79,4 +79,4 @@ EXPOSE 3000
 COPY ./packaging/docker/run.sh /run.sh
 
 USER grafana
-CMD [ "/run.sh" ]
+ENTRYPOINT [ "/run.sh" ]

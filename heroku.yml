@@ -5,7 +5,7 @@ setup:
 
 build:
   docker:
-    web: Dockerfile
+    web: rainmakers/Dockerfile
 
 run:
   web: "/run.sh"
