@@ -1,4 +1,4 @@
-FROM rainmakersonly/grafana:heroku_deploy
+FROM grafana:grafana
 
 USER root
 
