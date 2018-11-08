@@ -32,17 +32,12 @@ datasources:
   # <bool> enable/disable with credentials headers
   withCredentials: false
   # <bool> mark as default datasource. Max one per org
-  isDefault:
+  isDefault: false
   # <map> fields that will be converted to json and stored in jsonData
   jsonData:
-     graphiteVersion: "1.1"
-     tlsAuth: true
-     tlsAuthWithCACert: true
-  # <string> json object of data that will be encrypted.
-  secureJsonData:
-    tlsCACert: "..."
-    tlsClientCert: "..."
-    tlsClientKey: "..."
+     esVersion: "50"
+     maxConcurrentShardRequests: 256
+     timeField: created_at
   version: 1
   # <bool> allow users to edit datasources from the UI.
   editable: false
