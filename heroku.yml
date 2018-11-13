@@ -2,8 +2,8 @@ setup:
   addons:
     - plan: heroku-postgresql:hobby-basic
       as: DATABASE
- build:
+build:
   docker:
     web: Dockerfile
- run:
+run:
   web: "/run.sh"
