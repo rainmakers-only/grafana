@@ -80,3 +80,6 @@ COPY ./packaging/docker/run.sh /run.sh
 
 USER grafana
 ENTRYPOINT [ "/run.sh" ]
+
+# For Heroku
+CMD [ "/run.sh" ]
